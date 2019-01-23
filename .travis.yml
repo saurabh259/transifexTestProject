@@ -1,3 +1,6 @@
 sudo: required
-after_success:
-  -echo 'Test'
+
+language: ruby
+
+before_install:
+  - echo "Testing travis"
