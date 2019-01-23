@@ -1,8 +1,8 @@
 sudo: required
-after_success:
+script:
   - pip install virtualenv
   - virtualenv ~/env
   - source ~/env/bin/activate
   - pip install transifex-client
-  - sudo echo $'[https://www.transifex.com]\nhostname = https://www.transifex.com\nusername = '"$TRANSIFEX_USER"$'\npassword = '"$TRANSIFEX_PASSWORD"$'\n' > ~/.transifexrc
+  - sudo echo $'[https://www.transifex.com]\nhostname = https://www.transifex.com\nusername = api\npassword = 1/94e2aff080db27eee2f1242790e7b5696a9901ed\n' > ~/.transifexrc
   - tx push -s
