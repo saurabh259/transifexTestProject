@@ -1,6 +1,1 @@
-sudo: required
-
-language: ruby
-
-before_install:
-  - echo "Testing travis"
+script: bundle exec rake --verbose --trace
