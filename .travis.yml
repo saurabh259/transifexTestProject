@@ -4,5 +4,5 @@ after_success:
   - virtualenv ~/env
   - source ~/env/bin/activate
   - pip install transifex-client
-  - sudo echo $'[https://www.transifex.com]\nhostname = https://www.transifex.com\nusername = '"$saurabh.joshi25"$'\npassword = '"$TRANSIFEX_PASSWORD"$'\ntoken = '"$1/7c32a277b81a628a4f3192e21e84ce4b5c458e7f"$'\n' > ~/.transifexrc
+  - sudo echo $'[https://www.transifex.com]\nhostname = https://www.transifex.com\nusername = '"$TRANSIFEX_USER"$'\npassword = '"$TRANSIFEX_PASSWORD"$'\ntoken = '"$TRANSIFEX_API_TOKEN"$'\n' > ~/.transifexrc
   - tx push -s
