@@ -1,3 +1,16 @@
 [main]
 host = https://www.transifex.com
 
+[isha-test.blogtext-txt]
+file_filter = translations/<lang>/blogText.txt
+minimum_perc = 0
+source_file = locales/blogText.txt
+source_lang = en
+type = TXT
+
+[isha-test.content_entxt]
+file_filter = translations/<lang>/content.txt
+minimum_perc = 0
+source_file = locales/content.txt
+source_lang = en
+type = TXT
